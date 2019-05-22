@@ -1,4 +1,7 @@
-# Sql order of operations
+-- https://postgres.devmountain.com/
+-- when googling, specify: postgresSQL
+
+-- # Sql order of operations
 1. from - Choose and join tables to get base data
 2. where - filters the base data
 3. group by - aggregates the base data 
@@ -6,12 +9,12 @@
 5. select - returns the final data 
 6. order by - sorts the final data 
 7. limit - limits the returned data to a row count
-# Querying rows
+-- # Querying rows
 <!-- select distinct -->
 select distinct city from customer;
 <!-- updating rows -->
 update customer 
-set first_name = 'John'
+set first_name = 'John', last_name = 'Wayne'
 where customer_id = 1;
 <!-- setting values to null -->
 update customer 
