@@ -55,3 +55,5 @@ create table vacation_spots (
 <!-- inserting new rows -->
 insert into vacation_spots (location)
 values ('Denmark'), ('Italy');
+
+-- ilike is used for case insensitive queries
